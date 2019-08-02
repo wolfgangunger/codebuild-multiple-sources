@@ -8,7 +8,7 @@ phases:
   build:
     commands:
       - cd $CODEBUILD_SRC_DIR_source1
-      - touch file1
+      - touch file2
       - cd $CODEBUILD_SRC_DIR_source2
       - touch file2
  
@@ -16,10 +16,12 @@ artifacts:
   base-directory: $CODEBUILD_SRC_DIR_source1
   files:
      - file1
+     - file2
 
   secondary-artifacts:
     artifact2:
       base-directory: $CODEBUILD_SRC_DIR_source2
       files:
-        - file2 
+        - file1 
+        - file2
 
