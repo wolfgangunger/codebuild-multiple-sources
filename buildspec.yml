@@ -11,6 +11,8 @@ phases:
       - touch file2
       - cd $CODEBUILD_SRC_DIR_source2
       - touch file2
+      - cd $FOLDER1
+      - ls
  
 artifacts:
   base-directory: $CODEBUILD_SRC_DIR_source1
