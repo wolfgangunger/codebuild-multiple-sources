@@ -27,5 +27,5 @@ artifacts:
       files:
         - file1 
         - file2
-        - folder1/file3
+        - $FOLDER1/file3
 
