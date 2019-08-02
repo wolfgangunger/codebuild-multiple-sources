@@ -8,7 +8,7 @@ phases:
   build:
     commands:
       - echo $CODEBUILD_INITIATOR
-      - echo $CODEBUILD_INITIATOR
+      - echo $CODEBUILD_START_TIME
       - cd $CODEBUILD_SRC_DIR_source1
       - touch file2
       - ls
